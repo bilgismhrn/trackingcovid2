@@ -36,7 +36,7 @@
                                 @method('DELETE')
                                 <td><a class="btn btn-primary btn-sm" href="{{route('rw.show', $data->id)}}">SHOW</a>|
                                 <a class="btn btn-warning btn-sm" href="{{route('rw.edit', $data->id)}}"> EDIT </a>|
-                                <button type="submit" class="btn btn-danger fa fa-trash-alt btn-sm" onclick="return confirm('Apakah anda yakin ?')"><a>DELETE</a></button>
+                                <button type="submit" class="btn btn-danger  btn-sm" onclick="return confirm('Apakah anda yakin ?')"><a>DELETE</a></button>
                         </td>
                       </tr>
                           </form>

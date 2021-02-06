@@ -40,7 +40,7 @@
                      <tr class="">
                       <th scope="col">No</th>
                                             <th scope="col"><center>Lokasi</center></th>
-                                            <th scope="col"><center>RW</center></th>
+                                            <th scope="col"><center>Rw</center></th>
                                             <th scope="col"><center>Positif</center></th>
                                             <th scope="col"><center>Meninggal</center></th>
                                             <th scope="col"><center>Sembuh</center></th>

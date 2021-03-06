@@ -32,8 +32,8 @@ class WelcomeController extends Controller
             ->join ('kasus2s','rws.id','=','kasus2s.id_rw')
             ->sum('kasus2s.jumlah_meninggal');
 
-        $global = file_get_contents('https://api.kawalcorona.com/positif');
-            $getglobal = json_decode($global, TRUE);
+        // $global = file_get_contents('https://api.kawalcorona.com/positif');
+        //     $getglobal = json_decode($global, TRUE);
 
             // Table Lokal
             $tampil = DB::table('provinsis')
@@ -49,9 +49,9 @@ class WelcomeController extends Controller
                   ->groupBy('nama_provinsi')->orderBy('nama_provinsi','ASC')
                   ->get();
              // Table Global
-        $dataglobal= file_get_contents("https://api.kawalcorona.com/");
-        $globall = json_decode($dataglobal, TRUE);
+        // $dataglobal= file_get_contents("https://api.kawalcorona.com/");
+        // $globall = json_decode($dataglobal, TRUE);
 
-        return view('frontend.welcome', compact('positif','sembuh','meninggal','getglobal','globall','tampil'));
+        return view('frontend.welcome', compact('positif','sembuh','meninggal', 'tampil'));
     }
 }

@@ -65,8 +65,8 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="container text-center text-md-left" data-aos="fade-up">
-            <h1>Stay Safe. <span>Stay Home.</span></h1>
-            <h2>Covid-19</h2>
+            <h1>Tracking <span>Covid.</span></h1>
+            <h2></h2>
         </div>
     </section><!-- End Hero -->
 
@@ -98,15 +98,15 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
+                    {{-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                             <div class="icon"><i class="bx bx-world">global</i></div>
                             <h4><a href=""><?php echo $getglobal['value']; ?></a></h4>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
-            </div>
+                </div>
         </section><!-- End What We Do Section -->
 
 
@@ -209,7 +209,7 @@
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            {{-- <tbody>
                                 @php
                                     $no = 1;
                                 @endphp
@@ -217,14 +217,12 @@
                                     <tr>
                                         <td> <?php echo $no++; ?></td>
                                         <td> <?php echo $data['attributes']['Country_Region']; ?></td>
-                                        <td> <?php echo number_format($data['attributes']['Confirmed']);
-                                            ?></td>
-                                        <td><?php echo number_format($data['attributes']['Recovered']);
-                                            ?></td>
+                                        <td> <?php echo number_format($data['attributes']['Confirmed']); ?></td>
+                                        <td><?php echo number_format($data['attributes']['Recovered']); ?></td>
                                         <td><?php echo number_format($data['attributes']['Deaths']); ?></td>
                                     </tr>
                                 @endforeach
-                            </tbody>
+                            </tbody> --}}
 
                         </table>
                     </div>
